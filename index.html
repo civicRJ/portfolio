@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rishabh Jain is an AI/ML engineer and founder building production AI products across LLM debugging, govtech automation, RAG, computer vision, and ML infrastructure."
+    />
+    <title>Rishabh Jain | AI/ML Engineer and Founder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="signal-canvas" aria-hidden="true"></canvas>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-glass>
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#hero" aria-label="Rishabh Jain home">
+          <span class="brand-mark">RJ</span>
+          <span>Rishabh Jain</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#products">Startups</a>
+          <a href="#work">AI Work</a>
+          <a href="#timeline">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Portfolio · Hyderabad, India</p>
+          <h1 id="hero-title">Rishabh Jain</h1>
+          <p class="role-line">AI/ML Engineer and Founder</p>
+          <p class="hero-subtitle">
+            I build production AI products end to end, from model fine-tuning and LLM infrastructure to
+            backend systems, observability, evals, RAG, computer vision, and product UX.
+          </p>
+          <div class="hero-meta" aria-label="Profile summary">
+            <span>Founder of DebugAI and FormSetu</span>
+            <span>Production LLM systems</span>
+            <span>IIIT Hyderabad</span>
+          </div>
+          <div class="cta-row" aria-label="Primary actions">
+            <a class="button button-primary" href="#products"><span>View Startups</span></a>
+            <a class="button button-secondary" href="mailto:rishabhjain29122000@gmail.com"><span>Contact Me</span></a>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/rishabh-jain2912/" target="_blank" rel="noreferrer">
+              <span>LinkedIn</span>
+            </a>
+            <a class="button button-ghost" href="https://github.com/civicRJ" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div class="profile-note" aria-label="Portfolio positioning">
+            <strong>Founder/operator profile</strong>
+            <span>Built for recruiters, collaborators, and teams looking for hands-on AI product execution.</span>
+          </div>
+        </div>
+
+        <div class="systems-console" data-tilt data-glass aria-label="AI systems console">
+          <div class="console-topbar">
+            <div>
+              <span class="status-dot"></span>
+              <span>Portfolio Snapshot</span>
+            </div>
+            <span class="mono">ai.builder</span>
+          </div>
+          <div class="console-grid">
+            <article class="metric-card">
+              <span class="metric-label">Founder Products</span>
+              <strong data-count="2">0</strong>
+              <span>DebugAI and FormSetu</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Production Prompts</span>
+              <strong data-count="115">0</strong>
+              <span>Migrated to Langfuse</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">ML Systems</span>
+              <strong data-count="10000" data-suffix="+">0</strong>
+              <span>Submissions processed</span>
+            </article>
+            <article class="metric-card">
+              <span class="metric-label">Optimization</span>
+              <strong data-count="50" data-prefix="~" data-suffix="%">0</strong>
+              <span>Inference cost reduction</span>
+            </article>
+          </div>
+          <div class="proof-list" aria-label="Core capabilities">
+            <span>LLM debugging</span>
+            <span>RAG and evals</span>
+            <span>Computer vision</span>
+            <span>FastAPI systems</span>
+            <span>Product UX</span>
+          </div>
+          <div class="console-log" aria-label="Portfolio highlights">
+            <p><span>role</span> AI/ML Engineer, Coschool AI</p>
+            <p><span>startup</span> LLM observability plus govtech automation</p>
+            <p><span>stack</span> Python, FastAPI, React, Next.js, OpenAI, Langfuse, Milvus</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="eyebrow">Startup Products</p>
+          <h2 id="products-title">Two products I am building from zero to production.</h2>
+        </div>
+
+        <div class="product-shell product-case-grid" data-glass>
+            <article
+              class="product-panel active"
+              id="debugai-panel"
+              tabindex="0"
+              data-product="debugai"
+            >
+              <div class="product-content">
+                <span class="product-kicker">LLM debugging and observability</span>
+                <h3>DebugAI</h3>
+                <p>
+                  A debugging and observability platform for LLM applications. DebugAI diagnoses why AI
+                  responses fail, identifies the failing pipeline stage, ranks confidence, and suggests fixes.
+                </p>
+                <ul class="feature-list">
+                  <li>LLM debugging SDK</li>
+                  <li>Deterministic failure signals</li>
+                  <li>Prompt and pipeline analysis</li>
+                  <li>Traces, sessions, cost, latency, and diagnosis dashboard</li>
+                </ul>
+                <div class="tech-row" aria-label="DebugAI technology stack">
+                  <span>Python</span><span>FastAPI</span><span>React</span><span>LLM evaluation</span><span>Tracing</span>
+                </div>
+                <a class="inline-link" href="https://debugai-5lb2.onrender.com" target="_blank" rel="noreferrer">
+                  Visit DebugAI
+                </a>
+              </div>
+              <div class="product-visual debug-visual" aria-hidden="true">
+                <div class="pipeline-stack">
+                  <span>Prompt</span>
+                  <span>Retrieval</span>
+                  <span class="flagged">Failure</span>
+                  <span>Fix</span>
+                </div>
+                <div class="diagnosis-ring">
+                  <span>92%</span>
+                  <small>confidence</small>
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="product-panel active"
+              id="formsetu-panel"
+              tabindex="0"
+              data-product="formsetu"
+            >
+              <div class="product-content">
+                <span class="product-kicker">AI govtech form autofill</span>
+                <h3>FormSetu</h3>
+                <p>
+                  An AI-powered govtech platform that autofills Indian government forms from uploaded documents,
+                  helping users complete Aadhaar, PAN, passport, GST, income tax, and other forms faster.
+                </p>
+                <ul class="feature-list">
+                  <li>Document upload</li>
+                  <li>LLM extraction</li>
+                  <li>Structured parsing</li>
+                  <li>Government form autofill</li>
+                </ul>
+                <div class="tech-row" aria-label="FormSetu technology stack">
+                  <span>Next.js</span><span>FastAPI</span><span>GPT-4o</span><span>Python</span><span>AWS S3</span>
+                </div>
+                <a class="inline-link" href="https://www.formsetu.in" target="_blank" rel="noreferrer">
+                  Visit FormSetu
+                </a>
+              </div>
+              <div class="product-visual form-visual" aria-hidden="true">
+                <div class="doc-card">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="extract-arrow"></div>
+                <div class="form-fields">
+                  <span>Aadhaar</span>
+                  <span>PAN</span>
+                  <span>GST</span>
+                </div>
+              </div>
+            </article>
+        </div>
+      </section>
+
+      <section class="section pipeline-section" aria-labelledby="pipeline-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Operating Pattern</p>
+          <h2 id="pipeline-title">From messy input to reliable production output.</h2>
+        </div>
+        <div class="pipeline" aria-label="AI product pipeline">
+          <article class="pipeline-card" data-tilt>
+            <span>01</span>
+            <h3>Input</h3>
+            <p>Prompts, traces, documents, screenshots, handwritten submissions, and product events.</p>
+          </article>
+          <article class="pipeline-card" data-tilt>
+            <span>02</span>
+            <h3>Extraction / Signals</h3>
+            <p>Parse structure, surface failure signatures, build embeddings, and collect eval evidence.</p>
+          </article>
+          <article class="pipeline-card" data-tilt>
+            <span>03</span>
+            <h3>Diagnosis / Automation</h3>
+            <p>Rank likely causes, route pipeline stages, automate form fields, and reduce model cost.</p>
+          </article>
+          <article class="pipeline-card" data-tilt>
+            <span>04</span>
+            <h3>Production Output</h3>
+            <p>Dashboards, SDKs, filled forms, analytics systems, and monitored ML workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Production AI Work</p>
+          <h2 id="work-title">Applied ML, LLM infrastructure, RAG, evals, and product systems.</h2>
+        </div>
+        <div class="achievement-grid">
+          <article class="achievement-card" data-tilt>
+            <strong>0.975 mAP50</strong>
+            <p>Fine-tuned YOLOv11 for worksheet label and separator detection.</p>
+          </article>
+          <article class="achievement-card" data-tilt>
+            <strong>10k+</strong>
+            <p>Built worksheet segmentation pipelines for handwritten student submissions.</p>
+          </article>
+          <article class="achievement-card" data-tilt>
+            <strong>Multimodal OCR</strong>
+            <p>Combined Mathpix, GPT-4o vision, and Claude for robust extraction workflows.</p>
+          </article>
+          <article class="achievement-card" data-tilt>
+            <strong>~50% cost cut</strong>
+            <p>Reduced off-topic detection inference cost using embeddings, Milvus, and GMM classifiers.</p>
+          </article>
+          <article class="achievement-card" data-tilt>
+            <strong>115 prompts</strong>
+            <p>Migrated production prompt workflows into Langfuse for traceable operations.</p>
+          </article>
+          <article class="achievement-card" data-tilt>
+            <strong>Graph RAG</strong>
+            <p>Built Graph RAG and NL2SQL/GraphQL analytics systems for product intelligence.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="timeline-title">Roles across AI products, software engineering, and technical communication.</h2>
+        </div>
+        <div class="timeline" aria-label="Experience timeline">
+          <article class="timeline-item">
+            <time>May 2024 - Present</time>
+            <div>
+              <h3>AI/ML Engineer</h3>
+              <p>Coschool AI</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>Oct 2024 - Jan 2025</time>
+            <div>
+              <h3>Software Engineer Intern</h3>
+              <p>GIH: Global University Foundation</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>Dec 2022 - Feb 2023</time>
+            <div>
+              <h3>Technical Writer</h3>
+              <p>MarkTechPost</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected Projects</p>
+          <h2 id="projects-title">Systems that turn model capability into usable workflows.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-tilt>
+            <span class="project-index">01</span>
+            <h3>MedLabel AI</h3>
+            <p>Gemma VLM fine-tuned with QLoRA via Unsloth for structured JSON extraction from Indian medicine labels.</p>
+          </article>
+          <article class="project-card" data-tilt>
+            <span class="project-index">02</span>
+            <h3>Options Paper-Trading Bot</h3>
+            <p>Nifty 50 Iron Condor paper-trading system with Black-Scholes synthetic chain, dashboard, and trade controls.</p>
+          </article>
+          <article class="project-card" data-tilt>
+            <span class="project-index">03</span>
+            <h3>AI-CV Pipeline</h3>
+            <p>Scalable CV experiment workflow system with MinIO artifact storage and Docker deployment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-education" aria-labelledby="skills-title">
+        <div class="skills-panel" data-glass>
+          <div class="section-heading compact">
+            <p class="eyebrow">Skills</p>
+            <h2 id="skills-title">Production stack across models, systems, and interfaces.</h2>
+          </div>
+          <div class="skill-groups">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <div class="chips"><span>Python</span><span>C++</span><span>JavaScript</span><span>SQL</span></div>
+            </div>
+            <div class="skill-group">
+              <h3>ML / LLM</h3>
+              <div class="chips">
+                <span>PyTorch</span><span>YOLOv11</span><span>Unsloth</span><span>QLoRA</span><span>OpenAI</span>
+                <span>Claude</span><span>Gemini</span><span>Langfuse</span><span>Milvus</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Backend / Infra</h3>
+              <div class="chips">
+                <span>FastAPI</span><span>Kubernetes</span><span>Docker</span><span>AWS S3</span><span>AWS EC2</span>
+                <span>MongoDB</span><span>Next.js</span><span>React Native</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="education-card" data-glass>
+          <p class="eyebrow">Education</p>
+          <h2>B.Tech + MS by Research</h2>
+          <p>Computer Science, IIIT Hyderabad</p>
+          <time>2020 - 2025</time>
+        </aside>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel" data-glass>
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Build, debug, and ship production AI.</h2>
+            <p>
+              Reach out for AI product work, LLM reliability, govtech automation, computer vision systems, or
+              founder/operator conversations.
+            </p>
+          </div>
+          <div class="contact-links" aria-label="Contact links">
+            <a href="mailto:rishabhjain29122000@gmail.com">rishabhjain29122000@gmail.com</a>
+            <a href="https://www.linkedin.com/in/rishabh-jain2912/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/civicRJ" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Rishabh Jain · AI/ML Engineer and Founder · Hyderabad, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
