@@ -909,6 +909,33 @@ h3 {
   font-size: 0.82rem;
 }
 
+.experience-list {
+  display: grid;
+  gap: 0.52rem;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-list li {
+  position: relative;
+  color: var(--soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  padding-left: 1.15rem;
+}
+
+.experience-list li::before {
+  position: absolute;
+  left: 0;
+  top: 0.72rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--lime);
+  content: "";
+}
+
 .skills-education {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
